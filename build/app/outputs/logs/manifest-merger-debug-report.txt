@@ -1,0 +1,182 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2b5c28c2f1ce9a52face6671615ff8c9\AndroidManifest.xml:17:1-22:12
+MERGED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\94e0c3d933e9069a1aacd35c302c9573\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\3cc007c35dff761c2625257ea3ecdd25\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\dc7f2a1fdee7ab520ee6118cabfb8200\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\140b27f61605a9d274f7c41fc31f06cf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\05a94541e6fef63207a53b751d61675b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\720bd4921c2c303512206211d005ffda\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\259cc959ace5cc5eeb6bbafbb00eca15\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+	package
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:1-69:12
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:10:22-72
+uses-permission#android.permission.ANSWER_PHONE_CALLS
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:11:5-77
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:11:22-74
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:12:5-69
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:12:22-66
+uses-permission#android.permission.MANAGE_OWN_CALLS
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:13:5-74
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:13:22-72
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:14:22-69
+application
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:21:5-68:19
+MERGED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+	android:label
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:23:9-35
+	android:icon
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:24:9-43
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:22:9-57
+activity#com.example.repeatcall.MainActivity
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:27:9-45:20
+	android:launchMode
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:29:13-43
+	android:hardwareAccelerated
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:32:13-47
+	android:windowSoftInputMode
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:33:13-55
+	android:configChanges
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:31:13-137
+	android:theme
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:30:13-47
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:28:13-41
+meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:38:13-40:40
+	android:value
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:40:17-37
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:39:17-82
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:41:13-44:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:42:17-68
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:42:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:43:17-76
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:43:27-74
+receiver#com.example.repeatcall.IncomingCallReceiver
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:46:9-50:20
+	android:enabled
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:46:57-79
+	android:exported
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:46:80-103
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:46:20-56
+intent-filter#action:name:android.intent.action.PHONE_STATE
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:47:13-49:29
+action#android.intent.action.PHONE_STATE
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:48:17-76
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:48:25-73
+service#com.example.package.MyConnectionService
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:53:9-59:19
+	android:permission
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:54:13-72
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:53:18-72
+mete-data
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:55:13-96
+	android:value
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:55:74-94
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:55:24-73
+intent-filter#action:name:android.telecom.InCallService
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:56:13-58:29
+action#android.telecom.InCallService
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:57:17-72
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:57:25-69
+activity#com.example.package.MyConnectionService
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:62:9-67:13
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:62:19-73
+intent-filter#action:name:android.intent.action.DIAL+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:63:7-66:23
+action#android.intent.action.DIAL
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:64:12-64
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:64:20-61
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:65:12-71
+	android:name
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml:65:22-68
+uses-sdk
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2b5c28c2f1ce9a52face6671615ff8c9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\2b5c28c2f1ce9a52face6671615ff8c9\AndroidManifest.xml:20:5-44
+MERGED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\94e0c3d933e9069a1aacd35c302c9573\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-fragment-27.0.2.aar\94e0c3d933e9069a1aacd35c302c9573\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\3cc007c35dff761c2625257ea3ecdd25\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.0.2.aar\3cc007c35dff761c2625257ea3ecdd25\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\dc7f2a1fdee7ab520ee6118cabfb8200\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.0.2.aar\dc7f2a1fdee7ab520ee6118cabfb8200\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\140b27f61605a9d274f7c41fc31f06cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.0.2.aar\140b27f61605a9d274f7c41fc31f06cf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\05a94541e6fef63207a53b751d61675b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.0.2.aar\05a94541e6fef63207a53b751d61675b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\720bd4921c2c303512206211d005ffda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\720bd4921c2c303512206211d005ffda\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\259cc959ace5cc5eeb6bbafbb00eca15\AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\sumitomo_s\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\259cc959ace5cc5eeb6bbafbb00eca15\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sumitomo_s\Documents\GitHub\repeatcall\android\app\src\main\AndroidManifest.xml
+activity#io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity
+ADDED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] C:\Users\sumitomo_s\Documents\GitHub\repeatcall\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-92

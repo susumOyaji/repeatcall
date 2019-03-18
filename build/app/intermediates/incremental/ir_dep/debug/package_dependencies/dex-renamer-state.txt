@@ -1,0 +1,4 @@
+#Wed Feb 27 11:09:00 JST 2019
+base.0=C\:\\Users\\sumitomo_s\\Documents\\GitHub\\repeatcall\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,27 @@
+package com.example.repeatcall;
+
+
+import android.os.Bundle;
+import io.flutter.app.FlutterActivity;
+import android.telecom.Connection;
+import android.telecom.TelecomManager;
+import android.telephony.TelephonyManager;
+import android.net.Uri;
+import android.widget.Toast;
+
+
+class CallConnection extends Connection {
+    public void onCallStateChanged(int state, String incomingNumber) {
+    if (state == TelephonyManager.CALL_STATE_RINGING) {
+        Toast.makeText(getApplicationContext(), "Phone Is Ringing",Toast.LENGTH_SHORT).show();
+        Bundle extras = new Bundle();
+        Uri uri = Uri.fromParts(PhoneAccount.SCHEME_TEL, incomingNumber, null);
+        extras.putParcelable(TelecomManager.EXTRA_INCOMING_CALL_ADDRESS, uri);
+        extras.putParcelable(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, phoneAccountHandle);
+        telecomManager.addNewIncomingCall(phoneAccountHandle, extras);
+    }
+    if (state == TelephonyManager.CALL_STATE_OFFHOOK) {}
+    
+    } 
+   
+}

@@ -1,0 +1,35 @@
+package com.example.repeatcall;
+
+
+
+import io.flutter.app.FlutterActivity;
+import android.telecom.Connection;
+import android.telecom.TelecomManager;
+import android.telecom.PhoneAccount;
+import android.telecom.PhoneAccountHandle;
+import android.os.Bundle;
+import android.telecom.PhoneAccount.Builder;
+
+
+
+
+public  CallManager(){
+     
+    //TelecomManager manager = (TelecomManager) getSystemService(TELECOM_SERVICE);
+    //PhoneAccountHandle phoneAccountHandle = new PhoneAccountHandle(new ComponentName(getBaseContext().getPackageName(),    PhoneConnectionService.class.getName()), "myConnectionServiceId");
+    //PhoneAccount.Builder builder = PhoneAccount.builder(phoneAccountHandle,Localization.localize(R.string.IDS_APP_NAME_SHORT));
+    //builder.setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER | PhoneAccount.CAPABILITY_CONNECTION_MANAGER| PhoneAccount.CAPABILITY_VIDEO_CALLING );
+    //builder.setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER);//
+    //PhoneAccount phoneAccount = builder.build();
+    //manager.registerPhoneAccount(phoneAccount);  
+
+    TelecomManager manager = (TelecomManager) context.getSystemService(TELECOM_SERVICE);
+    PhoneAccountHandle phoneAccountHandle = new PhoneAccountHandle(new ComponentName(context.getPackageName(), PhoneConnectionService.class.getName()), "estosConnectionServiceId");
+    Bundle test = new Bundle();
+     Bundle bundle = new Bundle();
+        bundle.putParcelable("PARCELABLE", a);
+    test.putParcelable(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE,phoneAccountHandle);
+    test.putInt(TelecomManager.EXTRA_START_CALL_WITH_VIDEO_STATE, VideoProfile.STATE_BIDIRECTIONAL);
+    test.putParcelable(TelecomManager.EXTRA_OUTGOING_CALL_EXTRAS,extras);
+    manager.placeCall(Uri.parse("tel:" + "1234567890"),test);
+}

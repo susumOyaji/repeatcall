@@ -1,0 +1,70 @@
+//package="com.example.repeatcall";
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.ContextWrapper;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.BatteryManager;
+import android.telecom.TelecomManager;
+import android.telephony.TelephonyManager;
+import android.net.Uri;
+import android.os.Build.VERSION;
+import android.os.Build.VERSION_CODES;
+import android.os.Bundle;
+
+import io.flutter.app.FlutterActivity;
+import io.flutter.plugin.common.EventChannel;
+import io.flutter.plugin.common.EventChannel.EventSink;
+import io.flutter.plugin.common.EventChannel.StreamHandler;
+import io.flutter.plugin.common.MethodChannel;
+import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
+import io.flutter.plugin.common.MethodChannel.Result;
+import io.flutter.plugin.common.MethodCall;
+import io.flutter.plugins.GeneratedPluginRegistrant;
+
+
+
+class Test {
+    public static void mainm(String[] args) {
+        System.out.println("Hello world!");
+    }
+}
+
+class FieldSample {
+    // public 修飾された char 型のフィールド
+    public char c;
+    // int 型のプライベートな static フィールド. 0 で初期化
+    private static int count = 0;
+}
+
+class InitializationBlockSample {
+    /** インスタンス固有の ID として次に使用する値 */
+    private static int nextId;
+    /** インスタンス固有の ID */
+    private int id;
+
+    // 初期化ブロック
+    {
+        id = nextId++;
+    }
+    /// static な初期化ブロック
+    static {
+        nextId = 0; // この例は特に有用なものでなく、実際にはフィールド nextId の宣言時に初期化子で初期化しておけばよい
+    }
+}
+
+
+class MethodSample {
+    // int 型の引数を取るが何もしないメソッド
+    // void は返り値がないことを表す
+    public static void doNothing(int unusedValue) {
+        return; // 返り値が void の場合は return で何も返さない
+    }
+
+    // 引数をとらずに int 型の値を返すメソッド
+    public int callDoNothingMethod() {
+        doNothing(100);
+        return 0; // int 型の値を返す
+    }
+}
