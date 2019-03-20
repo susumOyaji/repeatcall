@@ -33,7 +33,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="repeatcall" >
         <activity
-            android:name="com.example.repeatcall.MainActivity"
+            android:name="com.example.repeatcall.App"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
@@ -68,7 +68,7 @@
         <!-- myconnectionservice label  android:label="@string/some_label_for_my_connection_service" -->
         <!-- android:name このサービスを実装するクラスに置き換える必要があります -->
         <service
-            android:name="com.example.package.MyConnectionService"
+            android:name="com.example.package.CallService"
             android:permission="android.permission.BIND_INCALL_SERVICE" >
             <mete-data
                 android:name="android.telecom.IN_CALL_SERVICE_UI"
@@ -80,13 +80,16 @@
         </service>
 
         <!-- android:name あなた自身のダイヤラ実装のための主要なアクティビティを実装するクラスによって置き換えられなければなりません。 -->
-        <activity android:name="com.example.package.MyConnectionService" >
-            <intent-filter>
-                <action android:name="android.intent.action.DIAL" />
+        <!-- <activity android:name="com.example.package.MyConnectionService"> -->
+        <intent-filter>
+            <action android:name="android.intent.action.DIAL" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
+            <data android:scheme=" tel " />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.DIAL" />
+        </intent-filter>
+        <!-- </activity> -->
         <activity
             android:name="io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity"
             android:exported="false"

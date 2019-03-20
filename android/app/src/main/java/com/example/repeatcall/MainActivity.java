@@ -19,7 +19,7 @@ import android.telecom.TelecomManager;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
-//import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatActivity;
 
 import android.widget.Toast;
 import android.net.Uri;
@@ -30,7 +30,7 @@ import android.telecom.PhoneAccountHandle;
 import android.telecom.Connection;
 import java.lang.Object;
 import android.content.ComponentName;
-import com.example.repeatcall.MyConnectionService;
+//import com.example.repeatcall.MyConnectionService;
 import android.widget.EditText;
 
 
@@ -180,7 +180,7 @@ public class MainActivity extends FlutterActivity {
 
   public void performDial(){
     
-     String mEditText_number = "0123456789";
+     String mEditText_number = "099123456789";
      if(mEditText_number!=null){
        try {
          startActivity(new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + mEditText_number)));

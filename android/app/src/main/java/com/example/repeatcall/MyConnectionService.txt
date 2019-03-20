@@ -23,8 +23,14 @@ import android.net.Uri;
 
 public class MyConnectionService extends ConnectionService {
 public static final String TAG = MyConnectionService.class.getName();
+//static int i(String tag, String msg, Throwable tr);
+static final String LOG_TAG = "Hello";
+
+
+
 @Override
 public int onStartCommand(Intent intent,int flags, int startId) {
+    Log.i(LOG_TAG, "message", new Throwable());
     Log.d(TAG, "On Start");
     return super.onStartCommand(intent, flags, startId);
 }

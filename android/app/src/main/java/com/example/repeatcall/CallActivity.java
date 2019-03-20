@@ -69,7 +69,7 @@ public class CallActivity extends  Activity {
     @SuppressLint("SetTextI18n")
     public void updateUi(Integer state) {
         // Set callInfo text by the state
-        callInfo.setText(CallStateString.asString(state).toLowerCase()+"\n\n"+number);
+        callInfo.setText(CallStateString.asString(state).toLowerCase()+"\n"+"\n"+number);
 
         if (state == Call.STATE_RINGING)
             answer.setVisibility(View.VISIBLE);
