@@ -6,11 +6,13 @@ import android.telecom.Call;
 import io.reactivex.subjects.BehaviorSubject;
 import timber.log.Timber;
 
+
 public final class OngoingCall {
     public static final BehaviorSubject<Integer> state;
     private static final Call.Callback callback;
     private static Call call;
 
+   
     public final BehaviorSubject getState() {
         return state;
     }

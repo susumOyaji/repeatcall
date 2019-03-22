@@ -32,13 +32,13 @@ import java.lang.Object;
 import android.content.ComponentName;
 //import com.example.repeatcall.MyConnectionService;
 import android.widget.EditText;
-
+import android.telecom.Call;
 
 
 public class MainActivity extends FlutterActivity {
   private static final String CHANNEL = "samples.flutter.io/battery";
   private static final int PERMISSION_REQUEST_READ_PHONE_STATE = 1;
- 
+  private static Call call;
   /*
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -68,24 +68,17 @@ public class MainActivity extends FlutterActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         GeneratedPluginRegistrant.registerWith(this);
-        TelecomManager manager = (TelecomManager) getSystemService(TELECOM_SERVICE);
         
-       
-        //setContentView(R.layout.activity_main);
+        new App();
+        Toast.makeText(MainActivity.this, "Started the MainActivity.app", Toast.LENGTH_SHORT).show();
+        CallService CallService = new CallService();
+        //CallService.onCallAdded();
 
-        Toast.makeText(this, "Started the app", Toast.LENGTH_SHORT).show();
-
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_DENIED || 
-                      checkSelfPermission(Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_DENIED) {
-                String[] permissions = {Manifest.permission.READ_PHONE_STATE, Manifest.permission.CALL_PHONE};
-                requestPermissions(permissions, PERMISSION_REQUEST_READ_PHONE_STATE);
-            }
-        }
         new MethodChannel(getFlutterView(), CHANNEL).setMethodCallHandler(
-                new MethodCallHandler() {
+          new MethodCallHandler() {
                     @Override
                     public void onMethodCall(MethodCall call, Result result) {//TODO
+                    Toast.makeText(MainActivity.this, "Started theMethodChannel ", Toast.LENGTH_SHORT).show();
                       if (call.method.equals("getBatteryLevel")) {
                         int batteryLevel = getBatteryLevel();
 
@@ -101,22 +94,7 @@ public class MainActivity extends FlutterActivity {
                 }
           );
     }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case PERMISSION_REQUEST_READ_PHONE_STATE: {
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Toast.makeText(this, "Permission granted: " + PERMISSION_REQUEST_READ_PHONE_STATE, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(this, "Permission NOT granted: " + PERMISSION_REQUEST_READ_PHONE_STATE, Toast.LENGTH_SHORT).show();
-                }
-
-                return;
-            }
-        }
-    }
-
+   
 
     
 
@@ -128,38 +106,6 @@ public class MainActivity extends FlutterActivity {
 
     
   private int getBatteryLevel() {
-
-    //Intent callIntent = new Intent(Intent.ACTION_CALL);
-    //callIntent.setData(Uri.parse("tel:"+"1234567890")); 
-    //Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "1234567890"));
-    //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-    //startActivity(intent);
-    //Intent intentcall = new Intent();
-    //intentcall.setAction(Intent.ACTION_DIAL);
-    //intentcall.setData(Uri.parse("tel:" + "12345687890"));
-    //startActivity(intentcall);
-
-    //Uri uri = Uri.parse("tel:1111111111");
-    //Intent i = new Intent(Intent.ACTION_CALL,uri);
-    //startActivity(i);
-    //String resule= isInCall();
-
-    //MyConnectionService myConnectionService = new MyConnectionService();
-    //myConnectionService.call();
-
-    performDial();
-   
-
-    /*
-    TelecomManager manager = (TelecomManager) getSystemService(TELECOM_SERVICE);
-    PhoneAccountHandle phoneAccountHandle = new PhoneAccountHandle(
-            new ComponentName(getPackageName(),MyConnectionService.class.getName()), "myConnectionServiceId");
-    Bundle test = new Bundle();
-    test.putParcelable(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, phoneAccountHandle);
-    manager.placeCall(Uri.parse("tel:" + "1212312312"), test);
-    */
-
-    
     Toast ts = Toast.makeText(MainActivity.this, "getBatteryLeval",Toast.LENGTH_SHORT);
      ts.show();
 

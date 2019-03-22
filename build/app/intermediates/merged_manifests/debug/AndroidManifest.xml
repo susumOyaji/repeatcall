@@ -32,7 +32,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="repeatcall" >
         <activity
-            android:name="com.example.repeatcall.App"
+            android:name="com.example.repeatcall.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
             android:hardwareAccelerated="true"
             android:launchMode="singleTop"
@@ -71,6 +71,10 @@
             android:permission="android.permission.BIND_INCALL_SERVICE" >
             <mete-data
                 android:name="android.telecom.IN_CALL_SERVICE_UI"
+                android:value="true" />
+
+            <meta-data
+                android:name="android.telecom.IN_CALL_SERVICE_RINGING"
                 android:value="true" />
 
             <intent-filter>
